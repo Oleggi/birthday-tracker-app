@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/birthday-tracker-app/static/css/main.c7803870.chunk.css",
-    "main.js": "/birthday-tracker-app/static/js/main.3b5d7cdc.chunk.js",
-    "main.js.map": "/birthday-tracker-app/static/js/main.3b5d7cdc.chunk.js.map",
+    "main.js": "/birthday-tracker-app/static/js/main.6da1a16a.chunk.js",
+    "main.js.map": "/birthday-tracker-app/static/js/main.6da1a16a.chunk.js.map",
     "runtime-main.js": "/birthday-tracker-app/static/js/runtime-main.8bb927e7.js",
     "runtime-main.js.map": "/birthday-tracker-app/static/js/runtime-main.8bb927e7.js.map",
     "static/js/2.a04b7a28.chunk.js": "/birthday-tracker-app/static/js/2.a04b7a28.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.8bb927e7.js",
     "static/js/2.a04b7a28.chunk.js",
     "static/css/main.c7803870.chunk.css",
-    "static/js/main.3b5d7cdc.chunk.js"
+    "static/js/main.6da1a16a.chunk.js"
   ]
 }
