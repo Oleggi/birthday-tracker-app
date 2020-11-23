@@ -18,6 +18,9 @@ export const BirthBlock = ({ users }) => {
     "December",
   ];
   const checkedUsers = users.filter((u) => u.isChecked);
+  if(checkedUsers.length === 0) {
+    return <h3>No employees selected</h3>;
+  }
   return (
     <>
       {months.map((m, index) => {

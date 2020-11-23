@@ -5,7 +5,7 @@ export const UsersBirth = ({users}) => {
   return(
     <div className='birth-container'>
       <h2>Employees birthday</h2>
-       <BirthBlock users={users}/>
+      <BirthBlock users={users} />
     </div>
   ) 
 };
