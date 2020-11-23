@@ -5,7 +5,7 @@ export const UserBirth = ({ filteredUsers }) => {
     return (
       <div className='birth-item'>
         {filteredUsers.map((u) => {
-          const date = format(new Date(u.dob), "dd MMMM, yyyy");
+          const date = format(new Date(u.dob), "dd MMMM, yyyy 'year'");
           return (
             <li key={u.id}>
               <span>{u.lastName}</span>

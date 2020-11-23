@@ -76,6 +76,7 @@ span {
 
 /*Right side section with users birthdays*/
 .birth-container {
+  position: relative;
   flex: 1;
   min-height: 50vh;
   height: fit-content;
@@ -110,6 +111,13 @@ span {
   margin-top: 25%;
   padding-right: 1rem;
   color: #aaacad;
+}
+
+.birth-container img {
+  position: absolute;
+  top: .1rem;
+  left: .6rem;
+  width: 2.6vw;
 }
 
 
