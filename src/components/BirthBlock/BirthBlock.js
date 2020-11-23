@@ -18,7 +18,7 @@ export const BirthBlock = ({ users }) => {
     "December",
   ];
   const checkedUsers = users.filter((u) => u.isChecked);
-  if(checkedUsers.length === 0) {
+  if (checkedUsers.length === 0) {
     return <h3>No employees selected</h3>;
   }
   return (
@@ -28,7 +28,7 @@ export const BirthBlock = ({ users }) => {
           (u) => months.indexOf(m) === getMonth(new Date(u.dob))
         );
         return (
-          <div key={index} className='birth-block'>
+          <div key={index} className="birth-block">
             {filteredUsers.length > 0 ? (
               <>
                 <h4>{m}</h4>
@@ -43,4 +43,3 @@ export const BirthBlock = ({ users }) => {
     </>
   );
 };
-
