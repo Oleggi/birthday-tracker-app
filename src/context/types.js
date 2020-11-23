@@ -1,0 +1,4 @@
+export const SHOW_PRELOADER = 'SHOW_PRELOADER';
+export const HIDE_PRELOADER = 'HIDE_PRELOADER';
+export const FETCH_USERS = 'FETCH_USERS';
+export const SET_IS_CHECKED = 'FETCH_USERS';

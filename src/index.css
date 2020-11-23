@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #f8e4a0;
+  color: #5e6163;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Main container*/
+.container {
+  display: flex;
+  gap: 2.5rem;
+
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+/* Left side sections with alphabet filtering*/
+.abc-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 2;
+
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+
+/* Last name and First name */
+span {
+  padding-right: .6rem;
+}
+
+.abc-block {
+  flex-basis: 30%;
+  border-radius: 10px;
+
+  padding: .8rem;
+
+  background-color: #f6f6f6;
+  box-shadow: 0px 0px 7px 5px rgba(128, 117, 97, 0.20);
+}
+
+.users-list-title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  flex-basis: 100%;
+  padding-bottom: 1rem;
+}
+
+.abc-user {
+  display: flex;
+}
+
+.abc-user .space {
+  flex: 1;
+}
+
+
+/*Right side section with users birthdays*/
+.birth-container {
+  flex: 1;
+  min-height: 50vh;
+  height: fit-content;
+
+  padding: 1rem;
+  margin-top: 5.4rem;
+
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 0px 7px 5px rgba(128, 117, 97, 0.20);
+}
+
+.birth-block {
+  margin: 1rem;
+}
+
+.birth-item {
+  padding-left: 1.5rem;
+}
+
+.birth-item .date {
+  padding-left: .6rem;
+}
+
+.birth-container h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.birth-container h3 {
+  text-align: center;
+  margin-top: 25%;
+  padding-right: 1rem;
+  color: #aaacad;
+}
+
+
+/* Styling for checkboxes*/
+input {
+  cursor: pointer;
+}
+
+
