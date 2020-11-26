@@ -4,14 +4,17 @@ import { UsersContext } from "./usersContext";
 import { usersReducer } from "./usersReducer";
 import {
   FETCH_USERS,
+  GET_FROM_LOCAL_STORAGE,
   HIDE_PRELOADER,
   SET_IS_CHECKED,
   SHOW_PRELOADER,
 } from "./types";
+import { setToLocalStorage } from "../Utils/localStHelper";
 
 export const UsersState = ({ children }) => {
   const initialState = {
     users: [],
+    checkedUsers: [],
     loading: false,
   };
 
@@ -35,16 +38,21 @@ export const UsersState = ({ children }) => {
     dispatch({ type: FETCH_USERS, payload });
   };
 
+  const getDataFromLocalStorage = () => {
+    dispatch({ type: GET_FROM_LOCAL_STORAGE });
+  };
+
   const setIsUserChecked = (userId) => {
     dispatch({ type: SET_IS_CHECKED, payload: state.users, userId });
+    setToLocalStorage(userId);
   };
 
   return (
     <UsersContext.Provider
       value={{
         fetchUsers,
+        getDataFromLocalStorage,
         users: state.users,
-        birthdays: state.birthdays,
         loading: state.loading,
         setIsUserChecked,
       }}

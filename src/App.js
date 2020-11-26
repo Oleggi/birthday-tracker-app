@@ -8,10 +8,10 @@ function App() {
       <UsersState>
         <Switch>
           <Route path="/employees" exact component={Employees} />
-          <Route path="/">
-            <Redirect to="/employees" />
-          </Route>
         </Switch>
+        <Route path="/">
+          <Redirect to="/employees" />
+        </Route>
       </UsersState>
     </div>
   );

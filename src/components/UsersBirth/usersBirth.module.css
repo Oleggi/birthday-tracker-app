@@ -1,0 +1,51 @@
+/*Right side section with users birthdays*/
+.birth_container {
+    position: relative;
+    flex: 1;
+    min-height: 50vh;
+    min-width: 228px;
+    height: fit-content;
+  
+    padding: 1rem;
+    margin-top: 5.4rem;
+  
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 7px 5px rgba(128, 117, 97, 0.20);
+  }
+  
+  .birth_block {
+    margin: 1rem;
+  }
+  
+  .birth_item {
+    padding-left: 1.5rem;
+  }
+
+  /* Last name and First name */
+  .birth_item span {
+      padding-right: .6rem;
+  }
+  
+  .birth_item .date {
+    padding-left: .6rem;
+  }
+  
+  .birth_container h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .birth_container h3 {
+    text-align: center;
+    margin-top: 25%;
+    padding-right: 1rem;
+    color: #aaacad;
+  }
+  
+  .birth_container img {
+    position: absolute;
+    top: .1rem;
+    left: .6rem;
+    width: 2.6vw;
+  }

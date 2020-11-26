@@ -1,0 +1,76 @@
+/* Left side sections with alphabet filtering*/
+.abc_container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex: 2;
+  
+    padding: 1rem 1rem;
+    border-radius: 10px;
+  }
+
+  .abc_block {
+    flex-basis: 30%;
+    min-width: 180px;
+  
+    padding: .8rem;
+  
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 7px 5px rgba(128, 117, 97, 0.20);
+  }
+
+  /* Last name and First name */
+  .abc_block span {
+    padding-right: .6rem;
+  }
+  
+  .users_list_title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    flex-basis: 100%;
+    padding-bottom: 1rem;
+  }
+  
+  .abc_user {
+    display: flex;
+  }
+  
+  .abc_user .space {
+    flex: 1;
+  }
+
+  @media (max-width: 1045px) {
+    .abc_container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex: 2;
+      padding: 2vw;
+    }
+
+    .abc_block {
+      flex-basis: 47%;
+      min-width: 180px;
+    }
+
+  }
+
+  @media (max-width: 756px) {
+    .abc_container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex: 2;
+      padding: 1vw;
+    }
+
+    .abc_block {
+      flex-basis: 97%;
+      min-width: 180px;
+    }
+
+  }
+  
